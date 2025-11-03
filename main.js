@@ -20,11 +20,13 @@ pronoun.forEach(domainPronoun => {
         if (domainNoun.endsWith(domainDoamins)) {
           // If the last words in the noun in the domain matches the domain,
           //  split the noun and end it with the domain directly
-          displayObj[domainDoamins].push(`${domainPronoun}${domainAdjective}\
-            ${domainNoun.slice(0, -domainDoamins.length)}.${domainDoamins}`)
+          let domainName = `${domainPronoun}${domainAdjective}${domainNoun
+            .slice(0, -domainDoamins.length)}.${domainDoamins}`
+          displayObj[domainDoamins].push(domainName)
         } else {
-          displayObj[domainDoamins].push(`${domainPronoun}${domainAdjective}\
-          ${domainNoun}.${domainDoamins}`)
+          let domainName = `${domainPronoun}${domainAdjective}${domainNoun}.
+          ${domainDoamins}`
+          displayObj[domainDoamins].push(domainName)
         };
       });
     });
