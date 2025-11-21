@@ -1,8 +1,8 @@
 // Domain parts
-let pronoun = ['the', 'our'];
-let adj = ['great', 'big'];
-let noun = ['jogger', 'racoon', 'internet', 'camiones', 'magnet'];
-let domain = ['com', 'es', 'dev', 'io', 'net'];
+const pronoun = ['the', 'our'];
+const adj = ['great', 'big'];
+const noun = ['jogger', 'racoon', 'internet', 'camiones', 'magnet'];
+const domain = ['com', 'es', 'dev', 'io', 'net'];
 
 // generate the domains
 let displayObj = {
